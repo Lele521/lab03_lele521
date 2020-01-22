@@ -46,8 +46,24 @@ public class MenuItemTest {
     }
 
     @Test
+    public void test_getPriceInCents() {
+        assertEquals(1049, smallPokeBowl.getPriceInCents());
+    }
+
+    @Test
+    public void test_getCategory() {
+        assertEquals("Poke Bowls", smallPokeBowl.getCategory());
+    }
+
+    @Test
+    public void test_getName() {
+        assertEquals("Small Poke Bowl", smallPokeBowl.getName());
+    }
+
+    @Test
     public void test_toString() {
         assertEquals("Small Poke Bowl,1049,Poke Bowls", smallPokeBowl.toString());
     }
+
 
 }
